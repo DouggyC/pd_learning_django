@@ -1,4 +1,8 @@
-{% extends 'base.html' %} {% load humanize %} {% block content %}
+{% extends 'base.html' %} 
+
+{% load humanize %} 
+
+{% block content %}
 
 <section id="showcase-inner" class="py-5 text-white">
   <div class="container">
@@ -54,7 +58,7 @@
                 <hr />
                 <div class="row py-2 text-secondary">
                   <div class="col-6">
-                    <i class="fas fa-th-large"></i> Sqft: 3200
+                    <i class="fas fa-th-large"></i> Sqft: {{ listing.sqft }}
                   </div>
                   <div class="col-6">
                     <i class="fas fa-car"></i> Garage: {{ listing.garage }}
@@ -80,11 +84,7 @@
                   </div>
                 </div>
                 <hr />
-                <a
-                  href="{% url 'listing' listing.id %}"
-                  class="btn btn-primary btn-block"
-                  >More Info</a
-                >
+                <a href="{% url 'listing' listing.id %}" class="btn btn-primary btn-block">More Info</a>
               </div>
             </div>
           </div>
