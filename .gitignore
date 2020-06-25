@@ -122,3 +122,6 @@ dmypy.json
 
 # Btre_theme
 btre_resources
+
+# pip freeze txt
+requirements.txt
