@@ -13,17 +13,17 @@
     <!-- Lightbox -->
     <link rel="stylesheet" href="{% static 'css/lightbox.min.css' %}" />
 
-    <title>BT Real Estate {% block title %}{% endblock %}</title>
+    <title>Coming soon {% block title %}{% endblock %}</title>
   </head>
   <body>
     <!-- Top Bar -->
-    {% include 'partials/_topbar.html' %}
+    {% comment %} {% include 'partials/_topbar.html' %} {% endcomment %}
 
     <!-- Nav Bar -->
-    {% include 'partials/_navbar.html' %} {% block content %} {% endblock%}
+    {% comment %} {% include 'partials/_navbar.html' %} {% block content %} {% endblock%} {% endcomment %}
 
     <!-- Footer -->
-    {% include 'partials/_footer.html' %}
+    {% comment %} {% include 'partials/_footer.html' %} {% endcomment %}
 
     <script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
     <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
